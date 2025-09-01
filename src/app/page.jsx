@@ -1,5 +1,6 @@
 import Header from '../app/components/Header'
 import Footer from '../app/components/Footer'
+import Card from './components/Card';
 
 export default function Home() {
   const cards = [
@@ -24,11 +25,13 @@ export default function Home() {
 
           <h2 className=''>Confira nossas IA's</h2>
 
-        <section className="container mx-auto">
-          {cards.map()}
-        </section>
+        {/* <section className="container mx-auto">
+          {cards.map((item, index) => {
+            return Card()
+          })}
+        </section> */}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

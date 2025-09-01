@@ -1,7 +1,7 @@
 export default function Header() {
     return (
-        <header className="font-sans">
-            <nav className="flex flex-row justify-between bg-white">
+        <header className="font-sans ">
+            <nav className="flex flex-row justify-between bg-white border-b-4 border-green-400">
                 <a href="/">
                     <div className=" flex flex-row items-center">
                         <img src="logo.png" alt="logo" className="h-15 w-15 ms-10" />
