@@ -3,7 +3,10 @@ export default function Header() {
         <header className="font-sans">
             <nav className="flex flex-row justify-between bg-white">
                 <a href="/">
-                    <div className=" flex flex-row items-center"><img src="logo.png" alt="logo" className="h-15 w-15 ms-10" /> <p className="text-black font-bold text-xl">grammarly</p></div>
+                    <div className=" flex flex-row items-center">
+                        <img src="logo.png" alt="logo" className="h-15 w-15 ms-10" />
+                        <p className="text-black font-bold text-xl">grammarly</p>
+                    </div>
                 </a>
 
                 <ul className="flex flex-row items-center">
@@ -19,8 +22,8 @@ export default function Header() {
                 </div>
             </nav>
 
-            <div className="grid grid-cols-3 bg-gray-200 p-5 items-center">
-                <h1 className="font-bold text-2xl text-black">Business</h1>
+            <div className="grid grid-cols-3 bg-gray-200 p-5 items-center ">
+                <h1 className="font-bold text-2xl text-black ms-10">Business</h1>
                 <ul className="flex flex-row justify-around">
                     <li className="text-gray-900">Pricing</li>
                     <li className="text-gray-900">Solutions</li>
