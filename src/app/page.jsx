@@ -19,7 +19,7 @@ export default function Home() {
 
           <h2 className=''>Confira nossas IA's</h2>
 
-        <section className="container mx-auto">
+        <section>
         <Card />
         </section> 
       </main>
