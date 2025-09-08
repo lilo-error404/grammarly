@@ -1,7 +1,5 @@
 import Header from '../components/Header'
-import Footer from '../components/Footer'
 import Card from '../components/Card';
-import Cola from '../components/Cola';
 
 export default function Home() {
 
@@ -17,14 +15,12 @@ export default function Home() {
           <img src="guy.png" alt="guy" className='w-100 md:w-200 xl:w-700' />
         </section>
 
-          <h2 className=''>Confira nossas IA's</h2>
 
-        <section>
+        <section className='container mx-auto'>
+          <h2 className='font-bold text-xl'>Confira nossas IA's</h2>
         <Card />
         </section> 
       </main>
-      <Footer />
-      <Cola />
     </>
   );
 }

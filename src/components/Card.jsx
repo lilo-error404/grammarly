@@ -67,19 +67,38 @@ export default function Card() {
 
     return (
         <>
-            <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 md:gap-4">
-                {cards.map((card) => (
-                    <div key={card.id} className="bg-purple-950">
-                        <img src={card.image} alt={card.title} />
-                        <div>
-                            <h3 className="font-bold text-lg">{card.title}</h3>
-                            <p>{card.description}</p>
+            <div className="container mx-auto px-5 py-12">
+                <div className="justify-center items-center gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+                    {cards.map((card) => (
+
+                        <div key={card.id} className="bg-[#1e2550] flex flex-col rounded-xl  items-center p-6 w-full max-w-2xl mx-auto hover:scale-105 hover:-shadow-xl lg:flex-row lg:items-start" >
+
+                            <img src={card.image} className="w-24 h-24 mb-4 hover:scale-106 lg:mb-0 lg:mr-6" />
+
+                            <div className="flex flex-col text-center px-2 flex-1 lg:text-left">
+
+                                <h2 className="font-bold text-xl mb-2 md:text-2xl">{card.title}</h2>
+
+
+                                <p className="text-sm  mb-4 md:text-base">{card.description}</p>
+
+                                <div className="flex flex-wrap justify-center gap-1 mb-2">
+                                    {card.tags.map((tags, index) => (
+                                        <span key={index} className="text-[10px] bg-emerald-700 text-white px-2 py-0.5 rounded-full">#{tags}</span>
+                                    ))}
+                                </div>
+
+                                <button className="mt-auto px-4 py-2 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-800 active:bg-emerald-900">
+                                    Saiba Mais
+                                </button>
+
+                            </div>
                         </div>
-                        <button className="bg-green-800 hover:bg-green-900 font-bold rounded-xl w-25 h-10">Usar IA</button>
-                    </div>
-                ))}
+
+                    ))}
+                </div>
             </div>
         </>
-
-    )
+    );
 }
